@@ -1,0 +1,118 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Navigation Bar */
+* {
+    margin: 0%;
+     padding:0%
+}
+.navbar{
+box-sizing: border-box;
+
+}
+a{
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+/* Navbar */
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: black;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+
+}
+.nav-links li {
+    margin: 0 30px;
+}
+.active{
+    color: white;
+    text-decoration: none;
+    font-weight: normal ;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(MOUNTAIN.png);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.header-content{
+    margin-bottom: 15px;
+    color: whitesmoke;
+    text-align: center;
+}
+.header-content h1{
+    font-size: 8vmin;
+}
+
+
+div p {
+    font-size: 3vmin ;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.button {
+    background-color: white;
+    color: black;
+    padding: 6px 20px;
+    border: 2px solid white;
+    margin: 17px;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    margin: 17px;
+    font-size: 1rem;
+    cursor: pointer;
+   
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links li {
+        margin: 10px 0;
+    }
+    .header-content h1 {
+        font-size: 6vmin;
+    }
+    div p {
+        font-size: 2vmin;
+    }
+    .button, .btn {
+        padding: 8px 15px;
+        margin: 10px;
+        font-size: 0.8rem;
+    }
+}
